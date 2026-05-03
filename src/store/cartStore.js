@@ -5,6 +5,7 @@ export const useCartStore = create((set, get) => ({
   // เพิ่มสินค้าลงตะกร้า
   addToCart: (product) => {
     // ... ทำเพิ่มตรงนี้
+    set((state) => ({ cart: [...state.cart, product] }));
   },
   // ลบสินค้าออกจากตะกร้า
   removeFromCart: (productId) => {
