@@ -9,6 +9,15 @@ import LoginPage from "../pages/LoginPage";
 import RegisterPage from "../pages/RegisterPage";
 
 const router = createBrowserRouter([
+
+  {
+    path: "/login",
+    element: <LoginPage/>
+  },
+  {
+    path: "/register",
+    element: <RegisterPage/>
+  },  
   {
     path: "/",
     element: <Layout />,
@@ -33,14 +42,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "/login",
-    element: <LoginPage/>
-  },
-  {
-    path: "/register",
-    element: <RegisterPage/>
-  },
+  
 ],
 { basename: "/ccwe1-app-hook-form/"},
 );
